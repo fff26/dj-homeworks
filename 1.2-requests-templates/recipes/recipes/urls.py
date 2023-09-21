@@ -1,3 +1,5 @@
+from calculator.views import *
+
 """recipes URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -17,5 +19,5 @@ Including another URLconf
 from django.urls import path
 
 urlpatterns = [
-    # здесь зарегистрируйте вашу view-функцию
+    path('<str:recipe_name>/', recipe_view, name='recipe_view')
 ]
