@@ -41,4 +41,4 @@ def recipe_view(request, recipe_name):
     context = {
         'recipe': {ingredient: amount * servings for ingredient, amount in recipe.items()}
     }
-    return render(request, 'index.html', context)
+    return render(request, 'calculator/index.html', context)
