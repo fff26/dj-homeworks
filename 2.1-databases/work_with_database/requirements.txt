@@ -1,2 +1,4 @@
-django
+django~=4.2.6
 psycopg2-binary
+
+python-slugify~=8.0.1

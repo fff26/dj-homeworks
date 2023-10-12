@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.text import slugify
 
+
 class Phone(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
