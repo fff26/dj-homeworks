@@ -29,7 +29,7 @@ class Article(models.Model):
 
 
 class Scope(models.Model):
-    article = models.ForeignKey(Article, on_delete=models.CASCADE)
+    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='scopes')
     tag = models.ForeignKey(Tag, on_delete=models.CASCADE, related_name='article')
     is_main = models.BooleanField(default=False, verbose_name='основной тэг')
 
