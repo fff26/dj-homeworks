@@ -1,7 +1,6 @@
 # примеры API-запросов
 
-@baseUrl = http://localhost:8000/api/v1
-
+baseUrl = http://localhost:8000/api/v1
 # создание продукта
 POST {{baseUrl}}/products/
 Content-Type: application/json
@@ -14,7 +13,7 @@ Content-Type: application/json
 ###
 
 # получение продуктов
-GET {{baseUrl}}/products/
+GET http://localhost:8000/api/v1/products/
 Content-Type: application/json
 
 ###
