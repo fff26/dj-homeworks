@@ -12,6 +12,7 @@ class ProductPositionSerializer(serializers.ModelSerializer):
     class Meta:
         model = StockProduct
         fields = '__all__'
+        exclude = ['stock']
 
 
 class StockSerializer(serializers.ModelSerializer):
